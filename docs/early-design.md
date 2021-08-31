@@ -107,11 +107,49 @@ Since we have 232 requests per second, we will be getting 20 million requests pe
 ## API Definition
 
 ## Architectural diagram
+![Architectural diagram](diagram.png)
 
 ## Load balancing
 
+We can add a Load balancing layer at three places in our system:
+
+1. Between Gateway and Services
+1. Between Services and Cache servers
+
+Initially, we could use a simple Round Robin approach that distributes incoming requests equally among backend servers. This LB is simple to implement and does not introduce any overhead. Another benefit of this approach is that if a server is dead, LB will take it out of the rotation and stop sending any traffic to it.
+
+A problem with Round Robin LB is that we do not consider the server load. As a result, if a server is overloaded or slow, the LB will not stop sending new requests to that server. To handle this, a more intelligent LB solution can be placed that periodically queries the backend server about its load and adjusts traffic based on that.
+
+In order to have a proper intelligent LB we also have do expose health check endpoints on the services.
+
+For the gateway we will use **HAProxy**.
+
 ## Caching
+
+We can cache the packages that are frequently accessed. We can use any off-the-shelf solution like Memcached or Redis. Thus, the services, before hitting the external systems (e.g. NPM Registry), can quickly check if the cache has the desired package considering also the version (the 'latest' version might suffer updates from time to time).
+
+**How much cache memory should we have?** We can follow the Pareto distribution. We can start with 20% of daily traffic and, based on clients’ usage patterns, we can adjust how many cache servers we need. As estimated above, we need 12.2 GB of memory to cache 20% of daily traffic. Since a modern-day server can have 1TB of memory, we can easily fit all the cache into one machine. Alternatively, we can use a couple of smaller servers to store all these hot packages.
+
+**Which cache eviction policy would best fit our needs?** When the cache is full, and we want to replace a package with a newer/hotter package, how would we choose? Least Recently Used (LRU) can be a reasonable policy for our system. Under this policy, we discard the least recently used package first. 
+
+To further increase the efficiency, we can replicate our caching servers to distribute the load between them.
+
+How can each cache replica be updated? Whenever there is a cache miss, our servers would be hitting an external system. Whenever this happens, we can update the cache and pass the new entry to all the cache replicas. Each replica can update its cache by adding the new entry. If a replica already has that entry, it can simply ignore it.
 
 ## Observability (logs, metrics)
 
+For monitoring our system we can use 2 directions: implementing logs and configuring metrics.
+
+The logs mainly will help us with debugging issues, if any, in production.
+
+The metrics will help us identify trends, trigger alerts in case of failures or generate various statistics about the platform.
+
+For the logs we will use the classic ELK stack (ElasticSearch, Logstash & Kibana).
+
+For the metrics we will use StatsD along with the combination of Graphite (timeseries db) and Grafana (UI for dashboards/queries).
+
 ## Future design considerations
+
+- Integration with Snyk and vulnerability scan
+- Replication of NPM Registry for faster searches (via https://replicate.npmjs.com and the follower pattern)
+- Bots for different code versioning platforms for auto PRing and patching the vulnerable dependencies
