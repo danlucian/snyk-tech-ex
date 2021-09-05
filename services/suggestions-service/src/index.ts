@@ -1,16 +1,11 @@
-import server from "./app";
+import server from "./server";
+import { port } from "./config/environment";
 
-const start = async () => {
+(async () => {
   try {
-    await server.listen(3000);
-
-    const address = server.server.address();
-    const port = typeof address === "string" ? address : address?.port;
-
-    server.log.info(`🚀 Suggestions node running on port ${port}`);
+    await server.listen(port, "0.0.0.0");
   } catch (err) {
     server.log.error(err);
     process.exit(1);
   }
-};
-start();
+})();
