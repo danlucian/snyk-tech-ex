@@ -1,6 +1,7 @@
 import Fastify, { FastifyInstance } from "fastify";
 import { loggingStreams, loggingSerializers } from "./config/logging";
 import { loggingLevel } from "./config/environment";
+import { dependenciesRoute } from "./routes/dependenciesRoute";
 
 const server: FastifyInstance = Fastify({
   logger: {
@@ -9,5 +10,7 @@ const server: FastifyInstance = Fastify({
     serializers: loggingSerializers,
   },
 });
+
+dependenciesRoute.forEach((route) => server.route(route));
 
 export default server;
