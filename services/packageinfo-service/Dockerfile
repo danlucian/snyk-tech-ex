@@ -6,5 +6,5 @@ COPY package*.json ./
 RUN npm install
 COPY dist/ ./dist/
 
-EXPOSE 8085
+EXPOSE 8086
 CMD [ "npm", "start" ]
