@@ -1,6 +1,6 @@
 import Fastify, { FastifyInstance } from "fastify";
 import { loggingStreams, loggingSerializers } from "./config/logging";
-import { searchRoutes } from "./routes/searchRoute";
+import { searchRoute } from "./routes/searchRoute";
 import { loggingLevel } from "./config/environment";
 
 const server: FastifyInstance = Fastify({
@@ -11,6 +11,6 @@ const server: FastifyInstance = Fastify({
   },
 });
 
-searchRoutes.forEach((route) => server.route(route));
+searchRoute.forEach((route) => server.route(route));
 
 export default server;

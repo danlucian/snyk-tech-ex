@@ -161,7 +161,7 @@ export const searchSchema = {
   },
 };
 
-export const searchRoutes: Array<RouteOptions> = [
+export const searchRoute: Array<RouteOptions> = [
   {
     method: "GET",
     url: "/search/suggestions",
