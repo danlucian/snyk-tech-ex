@@ -1,0 +1,827 @@
+{
+    "objects": [
+      {
+        "package": {
+          "name": "snyk",
+          "scope": "unscoped",
+          "version": "1.696.0",
+          "description": "snyk library and cli utility",
+          "keywords": [
+            "security",
+            "vulnerabilities",
+            "advisories",
+            "audit",
+            "snyk",
+            "scan",
+            "docker",
+            "container",
+            "scanning"
+          ],
+          "date": "2021-09-01T16:20:47.449Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/snyk",
+            "homepage": "https://github.com/snyk/snyk#readme",
+            "repository": "https://github.com/snyk/snyk",
+            "bugs": "https://github.com/snyk/snyk/issues"
+          },
+          "author": {
+            "name": "snyk.io"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5193510959470505,
+          "detail": {
+            "quality": 0.8714455886008792,
+            "popularity": 0.40357357914320036,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 100000.51
+      },
+      {
+        "package": {
+          "name": "snyk-module",
+          "scope": "unscoped",
+          "version": "3.2.0",
+          "description": "Snyk module helper",
+          "date": "2021-04-28T06:42:41.265Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/snyk-module",
+            "homepage": "https://github.com/snyk/module#readme",
+            "repository": "https://github.com/snyk/module",
+            "bugs": "https://github.com/snyk/module/issues"
+          },
+          "author": {
+            "name": "Remy Sharp"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "remy",
+              "email": "remy@leftlogic.com"
+            },
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.4743928356823386,
+          "detail": {
+            "quality": 0.9737709306778769,
+            "popularity": 0.19139324073302647,
+            "maintenance": 0.3293540634926179
+          }
+        },
+        "searchScore": 0.0058080163
+      },
+      {
+        "package": {
+          "name": "snyk-config",
+          "scope": "unscoped",
+          "version": "5.0.0",
+          "description": "Config setup for snyk shared across projects",
+          "keywords": [
+            "config"
+          ],
+          "date": "2021-02-22T13:01:19.954Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/snyk-config",
+            "homepage": "https://github.com/snyk/config#readme",
+            "repository": "https://github.com/snyk/config",
+            "bugs": "https://github.com/snyk/config/issues"
+          },
+          "author": {
+            "name": "Remy Sharp"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.4374395126203811,
+          "detail": {
+            "quality": 0.8785344094129162,
+            "popularity": 0.16527960811848025,
+            "maintenance": 0.3315180770143949
+          }
+        },
+        "searchScore": 0.001773912
+      },
+      {
+        "package": {
+          "name": "@snyk/snyk-docker-pull",
+          "scope": "snyk",
+          "version": "3.7.0",
+          "description": "CLI-less docker pull",
+          "date": "2021-07-25T06:52:08.877Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40snyk%2Fsnyk-docker-pull"
+          },
+          "author": {
+            "name": "snyk.io"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.439206613704001,
+          "detail": {
+            "quality": 0.8785344094129162,
+            "popularity": 0.16851321203845576,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.0017345601
+      },
+      {
+        "package": {
+          "name": "@snyk/gemfile",
+          "scope": "snyk",
+          "version": "1.2.0",
+          "description": "A Gemfile.lock parser for Node.js represented with JSON.",
+          "keywords": [
+            "Gemfile",
+            "Gemfile.lock",
+            "parser",
+            "Ruby",
+            "Rails",
+            "Gems",
+            "RubyGems"
+          ],
+          "date": "2019-02-08T12:24:34.305Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40snyk%2Fgemfile",
+            "homepage": "https://github.com/snyk/gemfile#readme",
+            "repository": "https://github.com/snyk/gemfile",
+            "bugs": "https://github.com/snyk/gemfile/issues"
+          },
+          "author": {
+            "name": "Trey Cordova"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.4179948246523512,
+          "detail": {
+            "quality": 0.8591209949187841,
+            "popularity": 0.166455430328264,
+            "maintenance": 0.2914260730337817
+          }
+        },
+        "searchScore": 0.00091523235
+      },
+      {
+        "package": {
+          "name": "snyk-python-plugin",
+          "scope": "unscoped",
+          "version": "1.22.1",
+          "description": "Snyk CLI Python plugin",
+          "date": "2021-08-31T10:42:23.954Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/snyk-python-plugin",
+            "homepage": "https://github.com/snyk/snyk-python-plugin",
+            "repository": "https://github.com/snyk/snyk-python-plugin",
+            "bugs": "https://github.com/snyk/snyk-python-plugin/issues"
+          },
+          "author": {
+            "name": "snyk.io"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.40997851024459336,
+          "detail": {
+            "quality": 0.8242440984782031,
+            "popularity": 0.1315388972413309,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.00058704574
+      },
+      {
+        "package": {
+          "name": "@snyk/ruby-semver",
+          "scope": "snyk",
+          "version": "3.0.2",
+          "description": "node-semver compatible API with RubyGems semantics",
+          "date": "2020-12-03T10:07:45.530Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40snyk%2Fruby-semver",
+            "homepage": "https://github.com/Snyk/ruby-semver#readme",
+            "repository": "https://github.com/Snyk/ruby-semver",
+            "bugs": "https://github.com/Snyk/ruby-semver/issues"
+          },
+          "author": {
+            "name": "Gareth Visagie",
+            "email": "gareth@snyk.io"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.411260930065867,
+          "detail": {
+            "quality": 0.9389503148702785,
+            "popularity": 0.08430761171199459,
+            "maintenance": 0.2859090614445297
+          }
+        },
+        "searchScore": 0.00042379322
+      },
+      {
+        "package": {
+          "name": "snyk-policy",
+          "scope": "unscoped",
+          "version": "1.22.1",
+          "description": "Snyk's policy parser and matching logic",
+          "keywords": [
+            "snyk"
+          ],
+          "date": "2021-08-18T07:17:36.884Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/snyk-policy",
+            "homepage": "https://github.com/snyk/policy#readme",
+            "repository": "https://github.com/snyk/policy",
+            "bugs": "https://github.com/snyk/policy/issues"
+          },
+          "author": {
+            "name": "Remy Sharp"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "remy",
+              "email": "remy@leftlogic.com"
+            },
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.374316637490128,
+          "detail": {
+            "quality": 0.6042186296570115,
+            "popularity": 0.2182535204922948,
+            "maintenance": 0.33332090405920395
+          }
+        },
+        "searchScore": 0.00039860178
+      },
+      {
+        "package": {
+          "name": "@hint/hint-no-vulnerable-javascript-libraries",
+          "scope": "hint",
+          "version": "2.12.4",
+          "description": "hint that that checks using Snyk for vulnerable JavaScript libraries",
+          "keywords": [
+            "no-vulnerable-javascript-libraries",
+            "no-vulnerable-javascript-libraries-hint",
+            "webhint",
+            "webhint-hint",
+            "webhint-recommended"
+          ],
+          "date": "2021-06-09T19:11:49.123Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40hint%2Fhint-no-vulnerable-javascript-libraries",
+            "homepage": "https://webhint.io/",
+            "repository": "https://github.com/webhintio/hint",
+            "bugs": "https://github.com/webhintio/hint/issues"
+          },
+          "publisher": {
+            "username": "sarvaje",
+            "email": "jdgarcia@outlook.com"
+          },
+          "maintainers": [
+            {
+              "username": "molant",
+              "email": "amolleda@gmail.com"
+            },
+            {
+              "username": "antross",
+              "email": "antross@gmail.com"
+            },
+            {
+              "username": "johnatms",
+              "email": "John.Emau@microsoft.com"
+            },
+            {
+              "username": "sarvaje",
+              "email": "jdgarcia@outlook.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.43854863729744253,
+          "detail": {
+            "quality": 0.9976581096328377,
+            "popularity": 0.06513392492419222,
+            "maintenance": 0.3327266590974969
+          }
+        },
+        "searchScore": 0.0001973073
+      },
+      {
+        "package": {
+          "name": "@snyk/glob-parent",
+          "scope": "snyk",
+          "version": "5.1.2-patch.1",
+          "description": "Extract the non-magic parent path from a glob string.",
+          "keywords": [
+            "glob",
+            "parent",
+            "strip",
+            "path",
+            "dirname",
+            "directory",
+            "base",
+            "wildcard"
+          ],
+          "date": "2021-02-25T13:20:00.220Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40snyk%2Fglob-parent",
+            "homepage": "https://github.com/gulpjs/glob-parent#readme",
+            "repository": "https://github.com/gulpjs/glob-parent",
+            "bugs": "https://github.com/gulpjs/glob-parent/issues"
+          },
+          "author": {
+            "name": "Gulp Team",
+            "email": "team@gulpjs.com",
+            "url": "https://gulpjs.com/"
+          },
+          "publisher": {
+            "username": "snyk-user",
+            "email": "npmjs+snyk-user@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-user",
+              "email": "npmjs+snyk-user@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.37292914544753275,
+          "detail": {
+            "quality": 0.6495228980771609,
+            "popularity": 0.17578217549388797,
+            "maintenance": 0.3329957560043535
+          }
+        },
+        "searchScore": 0.00019460038
+      },
+      {
+        "package": {
+          "name": "snyk-filter",
+          "scope": "unscoped",
+          "version": "1.2.1",
+          "description": "Module to consume json output from Snyk CLI for advanced filtering and results display",
+          "date": "2021-08-23T04:23:04.121Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/snyk-filter"
+          },
+          "author": {
+            "name": "Antoine Arlaud, antoine@snyk.io"
+          },
+          "publisher": {
+            "username": "snyk-tech-services",
+            "email": "antoine@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-tech-services",
+              "email": "antoine@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.3902346006672749,
+          "detail": {
+            "quality": 0.883234464465187,
+            "popularity": 0.02456501491670676,
+            "maintenance": 0.33333287459106115
+          }
+        },
+        "searchScore": 0.00017837748
+      },
+      {
+        "package": {
+          "name": "@snyk/code-client",
+          "scope": "snyk",
+          "version": "4.1.1",
+          "description": "Typescript consumer of SnykCode public API",
+          "keywords": [
+            "snyk",
+            "api client"
+          ],
+          "date": "2021-09-02T14:48:57.194Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40snyk%2Fcode-client",
+            "homepage": "https://github.com/snyk/code-client#readme",
+            "repository": "https://github.com/snyk/code-client",
+            "bugs": "https://github.com/snyk/code-client/issues"
+          },
+          "author": {
+            "name": "snyk"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.3603241338687566,
+          "detail": {
+            "quality": 0.6313660217234808,
+            "popularity": 0.15499331624298787,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.00015096393
+      },
+      {
+        "package": {
+          "name": "snyk-api-ts-client",
+          "scope": "unscoped",
+          "version": "1.7.2",
+          "description": "Snyk Api Client generated from API Blueprint",
+          "date": "2021-05-06T13:06:55.138Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/snyk-api-ts-client",
+            "homepage": "https://github.com/snyk-tech-services/snyk-api-ts-client#readme",
+            "repository": "https://github.com/snyk-tech-services/snyk-api-ts-client",
+            "bugs": "https://github.com/snyk-tech-services/snyk-api-ts-client/issues"
+          },
+          "author": {
+            "name": "Snyk Tech Services"
+          },
+          "publisher": {
+            "username": "snyk-tech-services",
+            "email": "antoine@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-tech-services",
+              "email": "antoine@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.3813852137137379,
+          "detail": {
+            "quality": 0.8087209133846154,
+            "popularity": 0.06335360948345825,
+            "maintenance": 0.33312907536897973
+          }
+        },
+        "searchScore": 0.00014623922
+      },
+      {
+        "package": {
+          "name": "@amagaki/amagaki",
+          "scope": "amagaki",
+          "version": "1.3.2",
+          "description": "[![NPM Version][npm-image]][npm-url] [![GitHub Actions][github-image]][github-url] [![Dependency Status][david-image]][david-url] [![Known Vulnerabilities][snyk-image]][snyk-url] [![codecov][codecov-image]][codecov-url] [![TypeScript Style Guide][gts-imag",
+          "date": "2021-08-16T20:04:36.719Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40amagaki%2Famagaki",
+            "homepage": "https://amagaki.dev",
+            "repository": "https://github.com/blinkk/amagaki",
+            "bugs": "https://github.com/blinkk/amagaki/issues"
+          },
+          "publisher": {
+            "username": "jeremydw",
+            "email": "jeremydw@gmail.com"
+          },
+          "maintainers": [
+            {
+              "username": "jeremydw",
+              "email": "jeremydw@gmail.com"
+            },
+            {
+              "username": "zoramite",
+              "email": "zoramite+npm@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.42478654843256836,
+          "detail": {
+            "quality": 0.9714952407467126,
+            "popularity": 0.047632312976822744,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.000096538235
+      },
+      {
+        "package": {
+          "name": "@snyk/unless-overloaded",
+          "scope": "snyk",
+          "version": "2.4.0",
+          "description": "Reject requests if we're currently processing too many",
+          "date": "2021-02-19T10:20:04.157Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40snyk%2Funless-overloaded",
+            "homepage": "https://github.com/snyk/unless-overloaded#readme",
+            "repository": "https://github.com/snyk/unless-overloaded",
+            "bugs": "https://github.com/snyk/unless-overloaded/issues"
+          },
+          "author": {
+            "name": "snyk.io"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.37803317898028554,
+          "detail": {
+            "quality": 0.8535815247431058,
+            "popularity": 0.01957091688743324,
+            "maintenance": 0.32888257327643483
+          }
+        },
+        "searchScore": 0.00009161294
+      },
+      {
+        "package": {
+          "name": "snyk-nuget-plugin",
+          "scope": "unscoped",
+          "version": "1.22.1",
+          "description": "Snyk CLI NuGet plugin",
+          "keywords": [
+            "snyk",
+            "nuget"
+          ],
+          "date": "2021-08-13T11:33:37.260Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/snyk-nuget-plugin",
+            "homepage": "https://github.com/snyk/snyk-nuget-plugin#readme",
+            "repository": "https://github.com/snyk/snyk-nuget-plugin",
+            "bugs": "https://github.com/snyk/snyk-nuget-plugin/issues"
+          },
+          "author": {
+            "name": "snyk.io"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.3395660707839949,
+          "detail": {
+            "quality": 0.544089703511788,
+            "popularity": 0.17049283732511966,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.000084633946
+      },
+      {
+        "package": {
+          "name": "snyk-api-client",
+          "scope": "unscoped",
+          "version": "0.0.1-6",
+          "description": "Helper functions to consume Snyk API",
+          "keywords": [
+            "snyk",
+            "api",
+            "helper"
+          ],
+          "date": "2021-03-07T06:59:42.629Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/snyk-api-client",
+            "homepage": "https://github.com/lovebhardwajsnyk/snyk-api-helper",
+            "repository": "https://github.com/lovebhardwajsnyk/snyk-api-helper",
+            "bugs": "https://github.com/lovebhardwajsnyk/snyk-api-helper/issues"
+          },
+          "author": {
+            "name": "Love Bhardwaj",
+            "email": "love.bhardwaj@snyk.io",
+            "username": "lovebhardwajsnyk"
+          },
+          "publisher": {
+            "username": "lovebhardwajsnyk",
+            "email": "love.bhardwaj@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "lovebhardwajsnyk",
+              "email": "love.bhardwaj@snyk.io"
+            }
+          ]
+        },
+        "flags": {
+          "unstable": true
+        },
+        "score": {
+          "final": 0.3632098067580656,
+          "detail": {
+            "quality": 0.7972721683484243,
+            "popularity": 0.021272986951286203,
+            "maintenance": 0.33309317377310893
+          }
+        },
+        "searchScore": 0.00007911733
+      },
+      {
+        "package": {
+          "name": "@snyk/graphlib",
+          "scope": "snyk",
+          "version": "3.3.0",
+          "description": "A directed and undirected multi-graph library",
+          "keywords": [
+            "graph",
+            "algorithms"
+          ],
+          "date": "2021-08-23T09:52:50.086Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40snyk%2Fgraphlib",
+            "homepage": "https://github.com/snyk/graphlib#readme",
+            "repository": "https://github.com/snyk/graphlib",
+            "bugs": "https://github.com/snyk/graphlib/issues"
+          },
+          "author": {
+            "name": "Chris Pettitt",
+            "email": "cpettitt@gmail.com"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.33923629863256927,
+          "detail": {
+            "quality": 0.5245631265556185,
+            "popularity": 0.18704562228313854,
+            "maintenance": 0.33257540819081505
+          }
+        },
+        "searchScore": 0.00007127317
+      },
+      {
+        "package": {
+          "name": "@snyk/mix-parser",
+          "scope": "snyk",
+          "version": "1.3.2",
+          "description": "Snyk's Mix Parser",
+          "date": "2021-04-19T09:09:43.413Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40snyk%2Fmix-parser",
+            "homepage": "https://github.com/snyk/mix-parser",
+            "repository": "https://github.com/snyk/mix-parser",
+            "bugs": "https://github.com/snyk/mix-parser/issues"
+          },
+          "author": {
+            "name": "snyk.io"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.33916540910748005,
+          "detail": {
+            "quality": 0.5393896484595172,
+            "popularity": 0.17337670829416635,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.000062816674
+      },
+      {
+        "package": {
+          "name": "@snyk/snyk-hex-plugin",
+          "scope": "snyk",
+          "version": "1.1.4",
+          "description": "Snyk Hex Plugin for Elixir ecosystem",
+          "date": "2021-04-20T10:01:08.107Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/%40snyk%2Fsnyk-hex-plugin",
+            "homepage": "https://github.com/snyk/snyk-hex-plugin",
+            "repository": "https://github.com/snyk/snyk-hex-plugin",
+            "bugs": "https://github.com/snyk/snyk-hex-plugin/issues"
+          },
+          "author": {
+            "name": "snyk.io"
+          },
+          "publisher": {
+            "username": "snyk-admin",
+            "email": "npmjs+snyk-admin@snyk.io"
+          },
+          "maintainers": [
+            {
+              "username": "snyk-admin",
+              "email": "npmjs+snyk-admin@snyk.io"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.3314969987241164,
+          "detail": {
+            "quality": 0.5144367637897067,
+            "popularity": 0.1728551512015365,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.000056724166
+      }
+    ],
+    "total": 422,
+    "time": "Sun Sep 05 2021 07:34:13 GMT+0000 (Coordinated Universal Time)"
+  }

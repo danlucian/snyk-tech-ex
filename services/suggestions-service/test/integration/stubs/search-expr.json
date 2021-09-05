@@ -1,0 +1,1266 @@
+{
+    "objects": [
+      {
+        "package": {
+          "name": "expr",
+          "scope": "unscoped",
+          "version": "0.0.0",
+          "description": "ERROR: No README.md file found!",
+          "date": "2013-04-11T00:33:56.512Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/expr"
+          },
+          "author": {
+            "name": "jden",
+            "email": "jason@denizac.org",
+            "username": "jden"
+          },
+          "publisher": {
+            "username": "jden",
+            "email": "jason@denizac.org"
+          },
+          "maintainers": [
+            {
+              "username": "jden",
+              "email": "jason@denizac.org"
+            }
+          ]
+        },
+        "flags": {
+          "unstable": true
+        },
+        "score": {
+          "final": 0.16714468464909454,
+          "detail": {
+            "quality": 0.5536020571905447,
+            "popularity": 0.0030401928340889925,
+            "maintenance": 0
+          }
+        },
+        "searchScore": 100000.15
+      },
+      {
+        "package": {
+          "name": "path-to-regexp",
+          "scope": "unscoped",
+          "version": "6.2.0",
+          "description": "Express style path to RegExp utility",
+          "keywords": [
+            "express",
+            "regexp",
+            "route",
+            "routing"
+          ],
+          "date": "2020-09-29T17:23:35.481Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/path-to-regexp",
+            "homepage": "https://github.com/pillarjs/path-to-regexp#readme",
+            "repository": "https://github.com/pillarjs/path-to-regexp",
+            "bugs": "https://github.com/pillarjs/path-to-regexp/issues"
+          },
+          "publisher": {
+            "username": "blakeembrey",
+            "email": "hello@blakeembrey.com"
+          },
+          "maintainers": [
+            {
+              "username": "blakeembrey",
+              "email": "hello@blakeembrey.com"
+            },
+            {
+              "username": "dougwilson",
+              "email": "doug@somethingdoug.com"
+            },
+            {
+              "username": "jonathanong",
+              "email": "jonathanrichardong@gmail.com"
+            },
+            {
+              "username": "jongleberry",
+              "email": "jonathanrichardong@gmail.com"
+            },
+            {
+              "username": "defunctzombie",
+              "email": "shtylman@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5654785180953595,
+          "detail": {
+            "quality": 0.6495228980771609,
+            "popularity": 0.7730099347617886,
+            "maintenance": 0.28590906144452966
+          }
+        },
+        "searchScore": 0.047268104
+      },
+      {
+        "package": {
+          "name": "is-regex",
+          "scope": "unscoped",
+          "version": "1.1.4",
+          "description": "Is this value a JS regex? Works cross-realm/iframe, and despite ES6 @@toStringTag",
+          "keywords": [
+            "regex",
+            "regexp",
+            "is",
+            "regular expression",
+            "regular",
+            "expression"
+          ],
+          "date": "2021-08-06T03:49:23.488Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/is-regex",
+            "homepage": "https://github.com/inspect-js/is-regex",
+            "repository": "https://github.com/inspect-js/is-regex",
+            "bugs": "https://github.com/inspect-js/is-regex/issues"
+          },
+          "author": {
+            "name": "Jordan Harband",
+            "email": "ljharb@gmail.com",
+            "username": "ljharb"
+          },
+          "publisher": {
+            "username": "ljharb",
+            "email": "ljharb@gmail.com"
+          },
+          "maintainers": [
+            {
+              "username": "ljharb",
+              "email": "ljharb@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.6032461290815665,
+          "detail": {
+            "quality": 0.9889125465366783,
+            "popularity": 0.5425877098682754,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.04102736
+      },
+      {
+        "package": {
+          "name": "express",
+          "scope": "unscoped",
+          "version": "4.17.1",
+          "description": "Fast, unopinionated, minimalist web framework",
+          "keywords": [
+            "express",
+            "framework",
+            "sinatra",
+            "web",
+            "rest",
+            "restful",
+            "router",
+            "app",
+            "api"
+          ],
+          "date": "2019-05-26T04:25:34.606Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/express",
+            "homepage": "http://expressjs.com/",
+            "repository": "https://github.com/expressjs/express",
+            "bugs": "https://github.com/expressjs/express/issues"
+          },
+          "author": {
+            "name": "TJ Holowaychuk",
+            "email": "tj@vision-media.ca"
+          },
+          "publisher": {
+            "username": "dougwilson",
+            "email": "doug@somethingdoug.com"
+          },
+          "maintainers": [
+            {
+              "username": "dougwilson",
+              "email": "doug@somethingdoug.com"
+            },
+            {
+              "username": "jasnell",
+              "email": "jasnell@gmail.com"
+            },
+            {
+              "username": "mikeal",
+              "email": "mikeal.rogers@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.48113225718439107,
+          "detail": {
+            "quality": 0.509483840831155,
+            "popularity": 0.9189886066403748,
+            "maintenance": 0.018974550316895263
+          }
+        },
+        "searchScore": 0.038730387
+      },
+      {
+        "package": {
+          "name": "express-jwt",
+          "scope": "unscoped",
+          "version": "6.1.0",
+          "description": "JWT authentication middleware.",
+          "keywords": [
+            "auth",
+            "authn",
+            "authentication",
+            "authz",
+            "authorization",
+            "http",
+            "jwt",
+            "token",
+            "oauth",
+            "express"
+          ],
+          "date": "2021-08-11T21:44:07.049Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/express-jwt",
+            "homepage": "https://github.com/auth0/express-jwt#readme",
+            "repository": "https://github.com/auth0/express-jwt",
+            "bugs": "http://github.com/auth0/express-jwt/issues"
+          },
+          "author": {
+            "name": "Matias Woloski",
+            "email": "matias@auth0.com",
+            "url": "https://www.auth0.com/"
+          },
+          "publisher": {
+            "username": "texeira",
+            "email": "marcos.castany@auth0.com"
+          },
+          "maintainers": [
+            {
+              "username": "woloski",
+              "email": "matiasw@gmail.com"
+            },
+            {
+              "username": "auth0-oss",
+              "email": "oss.sdks@auth0.com"
+            },
+            {
+              "username": "texeira",
+              "email": "marcos.castany@auth0.com"
+            },
+            {
+              "username": "codepete",
+              "email": "peter.ung@auth0.com"
+            },
+            {
+              "username": "ziluvatar",
+              "email": "eduardo.diaz@auth0.com"
+            },
+            {
+              "username": "iaco",
+              "email": "sebastian.iacomuzzi@gmail.com"
+            },
+            {
+              "username": "cocojoe",
+              "email": "martin.walsh@gmail.com"
+            },
+            {
+              "username": "fyockm",
+              "email": "fyockm@gmail.com"
+            },
+            {
+              "username": "auth0npm",
+              "email": "devops+npm@auth0.com"
+            },
+            {
+              "username": "auth0alec",
+              "email": "alec.pesola@auth0.com"
+            },
+            {
+              "username": "auth0brokkr",
+              "email": "support@auth0.com"
+            },
+            {
+              "username": "hzalaz",
+              "email": "hernan@auth0.com"
+            },
+            {
+              "username": "glena",
+              "email": "german.lena@gmail.com"
+            },
+            {
+              "username": "aaguiarz",
+              "email": "andres.aguiar@gmail.com"
+            },
+            {
+              "username": "machuga",
+              "email": "machuga+npm@gmail.com"
+            },
+            {
+              "username": "lbalmaceda",
+              "email": "balmacedaluciano@gmail.com"
+            },
+            {
+              "username": "jstrutz",
+              "email": "j@jasonstrutz.com"
+            },
+            {
+              "username": "cristiandouce",
+              "email": "cristiandouce@gmail.com"
+            },
+            {
+              "username": "heyitsry",
+              "email": "ryan.wilke@auth0.com"
+            },
+            {
+              "username": "sambego",
+              "email": "sambellen@gmail.com"
+            },
+            {
+              "username": "stevehobbsdev",
+              "email": "steve.hobbs@auth0.com"
+            },
+            {
+              "username": "bmaxwella0",
+              "email": "brandon.maxwell@auth0.com"
+            },
+            {
+              "username": "davidmoses",
+              "email": "david.moses@auth0.com"
+            },
+            {
+              "username": "sandrinodimattia",
+              "email": "sandrino@dimattia.be"
+            },
+            {
+              "username": "lzychowski",
+              "email": "les.zychowski@auth0.com"
+            },
+            {
+              "username": "joshcanhelp",
+              "email": "josh@joshcanhelp.com"
+            },
+            {
+              "username": "rob.coles",
+              "email": "rob.coles@auth0.com"
+            },
+            {
+              "username": "faroceann",
+              "email": "maxhammad@gmail.com"
+            },
+            {
+              "username": "rosnovsky",
+              "email": "artem@rosnovsky.us"
+            },
+            {
+              "username": "davidpatrick0",
+              "email": "david.patrick@auth0.com"
+            },
+            {
+              "username": "widcket",
+              "email": "zeta@widcket.com"
+            },
+            {
+              "username": "adamjmcgrath",
+              "email": "adamjmcgrath@gmail.com"
+            },
+            {
+              "username": "ldoorz",
+              "email": "luis.britos-manriquez@auth0.com"
+            },
+            {
+              "username": "th3maio",
+              "email": "andre.demaio@auth0.com"
+            },
+            {
+              "username": "jim.andersoon",
+              "email": "jim.anderson@auth0.com"
+            },
+            {
+              "username": "fadymak",
+              "email": "fmakram1@gmail.com"
+            },
+            {
+              "username": "navrupt",
+              "email": "navrup.tom@auth0.com"
+            },
+            {
+              "username": "frederikprijck",
+              "email": "frederik.prijck@gmail.com"
+            },
+            {
+              "username": "sergii.biienko",
+              "email": "sergii.biienko@auth0.com"
+            },
+            {
+              "username": "tomauth0",
+              "email": "tom.carter@auth0.com"
+            },
+            {
+              "username": "jakewlacey",
+              "email": "jakewlacey@gmail.com"
+            },
+            {
+              "username": "jpadilla",
+              "email": "hello@jpadilla.com"
+            },
+            {
+              "username": "gaj.gulati",
+              "email": "gaj.gulati@auth0.com"
+            },
+            {
+              "username": "jessele",
+              "email": "jesse.le@auth0.com"
+            },
+            {
+              "username": "shushen",
+              "email": "shu.shen@auth0.com"
+            },
+            {
+              "username": "rhamzeh_auth0",
+              "email": "raghd.hamzeh@auth0.com"
+            },
+            {
+              "username": "greglopez",
+              "email": "greg.lopez@auth0.com"
+            },
+            {
+              "username": "pose",
+              "email": "albertopose@gmail.com"
+            },
+            {
+              "username": "jaredhanson",
+              "email": "jaredhanson@gmail.com"
+            },
+            {
+              "username": "jfromaniello",
+              "email": "jfromaniello@gmail.com"
+            },
+            {
+              "username": "dschenkelman",
+              "email": "damian.schenkelman@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5601202436328847,
+          "detail": {
+            "quality": 0.9318614940582415,
+            "popularity": 0.4687163891892906,
+            "maintenance": 0.33288874056903045
+          }
+        },
+        "searchScore": 0.035278007
+      },
+      {
+        "package": {
+          "name": "cors",
+          "scope": "unscoped",
+          "version": "2.8.5",
+          "description": "Node.js CORS middleware",
+          "keywords": [
+            "cors",
+            "express",
+            "connect",
+            "middleware"
+          ],
+          "date": "2018-11-04T21:00:13.277Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/cors",
+            "homepage": "https://github.com/expressjs/cors#readme",
+            "repository": "https://github.com/expressjs/cors",
+            "bugs": "https://github.com/expressjs/cors/issues"
+          },
+          "author": {
+            "name": "Troy Goode",
+            "email": "troygoode@gmail.com",
+            "url": "https://github.com/troygoode/",
+            "username": "troygoode"
+          },
+          "publisher": {
+            "username": "dougwilson",
+            "email": "doug@somethingdoug.com"
+          },
+          "maintainers": [
+            {
+              "username": "dougwilson",
+              "email": "doug@somethingdoug.com"
+            },
+            {
+              "username": "troygoode",
+              "email": "troygoode@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5605405394687814,
+          "detail": {
+            "quality": 0.6495228980771609,
+            "popularity": 0.7533844128108844,
+            "maintenance": 0.2914260730337817
+          }
+        },
+        "searchScore": 0.031712055
+      },
+      {
+        "package": {
+          "name": "express-handlebars",
+          "scope": "unscoped",
+          "version": "5.3.3",
+          "description": "A Handlebars view engine for Express which doesn't suck.",
+          "keywords": [
+            "express",
+            "express3",
+            "handlebars",
+            "view",
+            "layout",
+            "partials",
+            "templates"
+          ],
+          "date": "2021-08-05T19:35:21.240Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/express-handlebars",
+            "homepage": "https://github.com/express-handlebars/express-handlebars",
+            "repository": "https://github.com/express-handlebars/express-handlebars",
+            "bugs": "https://github.com/express-handlebars/express-handlebars/issues"
+          },
+          "author": {
+            "name": "Eric Ferraiuolo",
+            "email": "eferraiuolo@gmail.com",
+            "url": "http://ericf.me/",
+            "username": "ericf"
+          },
+          "publisher": {
+            "username": "tonybrix",
+            "email": "tony@brix.ninja"
+          },
+          "maintainers": [
+            {
+              "username": "ericf",
+              "email": "eferraiuolo@gmail.com"
+            },
+            {
+              "username": "sahat",
+              "email": "sakhat@gmail.com"
+            },
+            {
+              "username": "tonybrix",
+              "email": "tony@brix.ninja"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.550609069675836,
+          "detail": {
+            "quality": 0.9846261697244779,
+            "popularity": 0.39587014883378846,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.023268646
+      },
+      {
+        "package": {
+          "name": "apollo-server-express",
+          "scope": "unscoped",
+          "version": "3.3.0",
+          "description": "Production-ready Node.js GraphQL server for Express",
+          "keywords": [
+            "GraphQL",
+            "Apollo",
+            "Server",
+            "Express",
+            "Javascript"
+          ],
+          "date": "2021-08-25T23:14:44.182Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/apollo-server-express",
+            "homepage": "https://github.com/apollographql/apollo-server#readme",
+            "repository": "https://github.com/apollographql/apollo-server",
+            "bugs": "https://github.com/apollographql/apollo-server/issues"
+          },
+          "author": {
+            "name": "Apollo",
+            "email": "opensource@apollographql.com"
+          },
+          "publisher": {
+            "username": "apollo-bot",
+            "email": "npm@apollographql.com"
+          },
+          "maintainers": [
+            {
+              "username": "apollo-bot",
+              "email": "npm@apollographql.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5316794819452919,
+          "detail": {
+            "quality": 0.8754441641752049,
+            "popularity": 0.4353701886458967,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.01644231
+      },
+      {
+        "package": {
+          "name": "http-proxy-middleware",
+          "scope": "unscoped",
+          "version": "2.0.1",
+          "description": "The one-liner node.js proxy middleware for connect, express and browser-sync",
+          "keywords": [
+            "reverse",
+            "proxy",
+            "middleware",
+            "http",
+            "https",
+            "connect",
+            "express",
+            "fastify",
+            "polka",
+            "browser-sync",
+            "gulp",
+            "grunt-contrib-connect",
+            "websocket",
+            "ws",
+            "cors"
+          ],
+          "date": "2021-07-01T20:38:47.726Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/http-proxy-middleware",
+            "homepage": "https://github.com/chimurai/http-proxy-middleware#readme",
+            "repository": "https://github.com/chimurai/http-proxy-middleware",
+            "bugs": "https://github.com/chimurai/http-proxy-middleware/issues"
+          },
+          "author": {
+            "name": "Steven Chim"
+          },
+          "publisher": {
+            "username": "chimurai",
+            "email": "stevenchim@gmail.com"
+          },
+          "maintainers": [
+            {
+              "username": "chimurai",
+              "email": "stevenchim@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5414494136163697,
+          "detail": {
+            "quality": 0.6096732850546674,
+            "popularity": 0.6910878898094366,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.016285
+      },
+      {
+        "package": {
+          "name": "express-fileupload",
+          "scope": "unscoped",
+          "version": "1.2.1",
+          "description": "Simple express file upload middleware that wraps around Busboy",
+          "keywords": [
+            "express",
+            "file-upload",
+            "upload",
+            "forms",
+            "multipart",
+            "files",
+            "busboy",
+            "middleware"
+          ],
+          "date": "2021-01-11T23:22:02.712Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/express-fileupload",
+            "homepage": "https://github.com/richardgirges/express-fileupload#readme",
+            "repository": "https://github.com/richardgirges/express-fileupload",
+            "bugs": "https://github.com/richardgirges/express-fileupload/issues"
+          },
+          "author": {
+            "name": "Richard Girges",
+            "email": "richardgirges@gmail.com",
+            "username": "richardgirges"
+          },
+          "publisher": {
+            "username": "richardgirges",
+            "email": "richardgirges@gmail.com"
+          },
+          "maintainers": [
+            {
+              "username": "richardgirges",
+              "email": "richardgirges@gmail.com"
+            },
+            {
+              "username": "romon2002",
+              "email": "romon2002@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5394845624124752,
+          "detail": {
+            "quality": 0.9769114157238504,
+            "popularity": 0.3760169880272076,
+            "maintenance": 0.3280148339594211
+          }
+        },
+        "searchScore": 0.016106997
+      },
+      {
+        "package": {
+          "name": "mathjs",
+          "scope": "unscoped",
+          "version": "9.4.4",
+          "description": "Math.js is an extensive math library for JavaScript and Node.js. It features a flexible expression parser with support for symbolic computation, comes with a large set of built-in functions and constants, and offers an integrated solution to work with dif",
+          "keywords": [
+            "math",
+            "mathematics",
+            "functions",
+            "numeric",
+            "algebra",
+            "parser",
+            "expression",
+            "number",
+            "bignumber",
+            "complex",
+            "fraction",
+            "matrix",
+            "unit"
+          ],
+          "date": "2021-07-07T08:52:18.899Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/mathjs",
+            "homepage": "https://mathjs.org",
+            "repository": "https://github.com/josdejong/mathjs",
+            "bugs": "https://github.com/josdejong/mathjs/issues"
+          },
+          "author": {
+            "name": "Jos de Jong",
+            "email": "wjosdejong@gmail.com",
+            "url": "https://github.com/josdejong",
+            "username": "josdejong"
+          },
+          "publisher": {
+            "username": "josdejong",
+            "email": "wjosdejong@gmail.com"
+          },
+          "maintainers": [
+            {
+              "username": "josdejong",
+              "email": "wjosdejong@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5780447576413583,
+          "detail": {
+            "quality": 0.9998268663654146,
+            "popularity": 0.4612286601859066,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.015382439
+      },
+      {
+        "package": {
+          "name": "escape-string-regexp",
+          "scope": "unscoped",
+          "version": "5.0.0",
+          "description": "Escape RegExp special characters",
+          "keywords": [
+            "escape",
+            "regex",
+            "regexp",
+            "regular",
+            "expression",
+            "string",
+            "special",
+            "characters"
+          ],
+          "date": "2021-04-17T15:45:50.334Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/escape-string-regexp",
+            "homepage": "https://github.com/sindresorhus/escape-string-regexp#readme",
+            "repository": "https://github.com/sindresorhus/escape-string-regexp",
+            "bugs": "https://github.com/sindresorhus/escape-string-regexp/issues"
+          },
+          "author": {
+            "name": "Sindre Sorhus",
+            "email": "sindresorhus@gmail.com",
+            "url": "https://sindresorhus.com",
+            "username": "sindresorhus"
+          },
+          "publisher": {
+            "username": "sindresorhus",
+            "email": "sindresorhus@gmail.com"
+          },
+          "maintainers": [
+            {
+              "username": "sindresorhus",
+              "email": "sindresorhus@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5322059526713246,
+          "detail": {
+            "quality": 0.5393896484595172,
+            "popularity": 0.7298901099897974,
+            "maintenance": 0.3283643418201155
+          }
+        },
+        "searchScore": 0.014428789
+      },
+      {
+        "package": {
+          "name": "anymatch",
+          "scope": "unscoped",
+          "version": "3.1.2",
+          "description": "Matches strings against configurable strings, globs, regular expressions, and/or functions",
+          "keywords": [
+            "match",
+            "any",
+            "string",
+            "file",
+            "fs",
+            "list",
+            "glob",
+            "regex",
+            "regexp",
+            "regular",
+            "expression",
+            "function"
+          ],
+          "date": "2021-04-06T22:16:01.465Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/anymatch",
+            "homepage": "https://github.com/micromatch/anymatch",
+            "repository": "https://github.com/micromatch/anymatch",
+            "bugs": "https://github.com/micromatch/anymatch/issues"
+          },
+          "author": {
+            "name": "Elan Shanker",
+            "url": "https://github.com/es128"
+          },
+          "publisher": {
+            "username": "paulmillr",
+            "email": "paul@paulmillr.com"
+          },
+          "maintainers": [
+            {
+              "username": "es128",
+              "email": "elan.shanker+npm@gmail.com"
+            },
+            {
+              "username": "phated",
+              "email": "blaine.bublitz@gmail.com"
+            },
+            {
+              "username": "paulmillr",
+              "email": "paul@paulmillr.com"
+            },
+            {
+              "username": "jonschlinkert",
+              "email": "github@sellside.com"
+            },
+            {
+              "username": "doowb",
+              "email": "brian.woodward@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5272347109845436,
+          "detail": {
+            "quality": 0.61668210986584,
+            "popularity": 0.6497138412058074,
+            "maintenance": 0.3280863817221685
+          }
+        },
+        "searchScore": 0.011882753
+      },
+      {
+        "package": {
+          "name": "helmet",
+          "scope": "unscoped",
+          "version": "4.6.0",
+          "description": "help secure Express/Connect apps with various HTTP headers",
+          "keywords": [
+            "express",
+            "security",
+            "headers"
+          ],
+          "date": "2021-05-02T15:13:09.307Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/helmet",
+            "homepage": "https://helmetjs.github.io/",
+            "repository": "https://github.com/helmetjs/helmet",
+            "bugs": "https://github.com/helmetjs/helmet/issues"
+          },
+          "author": {
+            "name": "Adam Baldwin",
+            "email": "adam@npmjs.com",
+            "url": "https://evilpacket.net"
+          },
+          "publisher": {
+            "username": "evanhahn",
+            "email": "me@evanhahn.com"
+          },
+          "maintainers": [
+            {
+              "username": "adam_baldwin",
+              "email": "evilpacket@gmail.com"
+            },
+            {
+              "username": "evanhahn",
+              "email": "me@evanhahn.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5234727617174555,
+          "detail": {
+            "quality": 0.6386515519225721,
+            "popularity": 0.6148978570010375,
+            "maintenance": 0.33332298911520225
+          }
+        },
+        "searchScore": 0.011272486
+      },
+      {
+        "package": {
+          "name": "express-validator",
+          "scope": "unscoped",
+          "version": "6.12.1",
+          "description": "Express middleware for the validator module.",
+          "keywords": [
+            "express",
+            "validator",
+            "validation",
+            "validate",
+            "sanitize",
+            "sanitization",
+            "xss"
+          ],
+          "date": "2021-07-23T09:23:28.601Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/express-validator",
+            "homepage": "https://express-validator.github.io",
+            "repository": "https://github.com/express-validator/express-validator",
+            "bugs": "https://github.com/express-validator/express-validator/issues"
+          },
+          "author": {
+            "name": "Christoph Tavan",
+            "email": "dev@tavan.de",
+            "username": "ctavan"
+          },
+          "publisher": {
+            "username": "gustavohenke",
+            "email": "guhenke@gmail.com"
+          },
+          "maintainers": [
+            {
+              "username": "ctavan",
+              "email": "dev@tavan.de"
+            },
+            {
+              "username": "gustavohenke",
+              "email": "guhenke@gmail.com"
+            },
+            {
+              "username": "rustybailey",
+              "email": "rustylbailey@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.49559314956221495,
+          "detail": {
+            "quality": 0.6393896484595172,
+            "popularity": 0.5345988238791234,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.011206372
+      },
+      {
+        "package": {
+          "name": "micromatch",
+          "scope": "unscoped",
+          "version": "4.0.4",
+          "description": "Glob matching for javascript/node.js. A replacement and faster alternative to minimatch and multimatch.",
+          "keywords": [
+            "bash",
+            "bracket",
+            "character-class",
+            "expand",
+            "expansion",
+            "expression",
+            "extglob",
+            "extglobs",
+            "file",
+            "files",
+            "filter",
+            "find",
+            "glob",
+            "globbing",
+            "globs",
+            "globstar",
+            "lookahead",
+            "lookaround",
+            "lookbehind",
+            "match",
+            "matcher",
+            "matches",
+            "matching",
+            "micromatch",
+            "minimatch",
+            "multimatch",
+            "negate",
+            "negation",
+            "path",
+            "pattern",
+            "patterns",
+            "posix",
+            "regex",
+            "regexp",
+            "regular",
+            "shell",
+            "star",
+            "wildcard"
+          ],
+          "date": "2021-04-10T11:38:38.918Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/micromatch"
+          },
+          "author": {
+            "name": "Jon Schlinkert",
+            "url": "https://github.com/jonschlinkert"
+          },
+          "publisher": {
+            "username": "danez",
+            "email": "npm@tschinder.de"
+          },
+          "maintainers": [
+            {
+              "username": "es128",
+              "email": "elan.shanker+npm@gmail.com"
+            },
+            {
+              "username": "jonschlinkert",
+              "email": "github@sellside.com"
+            },
+            {
+              "username": "doowb",
+              "email": "brian.woodward@gmail.com"
+            },
+            {
+              "username": "danez",
+              "email": "npm@tschinder.de"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.551797557136222,
+          "detail": {
+            "quality": 0.6321784773339095,
+            "popularity": 0.7027295622623602,
+            "maintenance": 0.33196762041206607
+          }
+        },
+        "searchScore": 0.010461345
+      },
+      {
+        "package": {
+          "name": "express-session",
+          "scope": "unscoped",
+          "version": "1.17.2",
+          "description": "Simple session middleware for Express",
+          "date": "2021-05-19T17:35:06.512Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/express-session",
+            "homepage": "https://github.com/expressjs/session#readme",
+            "repository": "https://github.com/expressjs/session",
+            "bugs": "https://github.com/expressjs/session/issues"
+          },
+          "author": {
+            "name": "TJ Holowaychuk",
+            "email": "tj@vision-media.ca",
+            "url": "http://tjholowaychuk.com"
+          },
+          "publisher": {
+            "username": "dougwilson",
+            "email": "doug@somethingdoug.com"
+          },
+          "maintainers": [
+            {
+              "username": "dougwilson",
+              "email": "doug@somethingdoug.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.4760004445072971,
+          "detail": {
+            "quality": 0.46933126492509797,
+            "popularity": 0.6293529868363639,
+            "maintenance": 0.3283643418201155
+          }
+        },
+        "searchScore": 0.008858139
+      },
+      {
+        "package": {
+          "name": "connect-mongo",
+          "scope": "unscoped",
+          "version": "4.5.0",
+          "description": "MongoDB session store for Express and Connect",
+          "keywords": [
+            "connect",
+            "mongo",
+            "mongodb",
+            "session",
+            "express"
+          ],
+          "date": "2021-08-17T11:03:06.659Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/connect-mongo",
+            "homepage": "https://github.com/jdesboeufs/connect-mongo#readme",
+            "repository": "https://github.com/jdesboeufs/connect-mongo",
+            "bugs": "https://github.com/jdesboeufs/connect-mongo/issues"
+          },
+          "publisher": {
+            "username": "mingchuno",
+            "email": "mingchuno@gmail.com"
+          },
+          "maintainers": [
+            {
+              "username": "jdesboeufs",
+              "email": "jerome.desboeufs@gmail.com"
+            },
+            {
+              "username": "mingchuno",
+              "email": "mingchuno@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5479609973955837,
+          "detail": {
+            "quality": 0.998377006310934,
+            "popularity": 0.37651779667324814,
+            "maintenance": 0.3333333333333333
+          }
+        },
+        "searchScore": 0.007661534
+      },
+      {
+        "package": {
+          "name": "string.prototype.matchall",
+          "scope": "unscoped",
+          "version": "4.0.5",
+          "description": "Spec-compliant polyfill for String.prototype.matchAll",
+          "keywords": [
+            "ES2020",
+            "ES",
+            "String.prototype.matchAll",
+            "matchAll",
+            "match",
+            "regex",
+            "regexp",
+            "regular",
+            "expression",
+            "matches"
+          ],
+          "date": "2021-05-25T19:57:37.293Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/string.prototype.matchall",
+            "homepage": "https://github.com/es-shims/String.prototype.matchAll#readme",
+            "repository": "https://github.com/es-shims/String.prototype.matchAll",
+            "bugs": "https://github.com/es-shims/String.prototype.matchAll/issues"
+          },
+          "author": {
+            "name": "Jordan Harband",
+            "email": "ljharb@gmail.com",
+            "username": "ljharb"
+          },
+          "publisher": {
+            "username": "ljharb",
+            "email": "ljharb@gmail.com"
+          },
+          "maintainers": [
+            {
+              "username": "ljharb",
+              "email": "ljharb@gmail.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5593434632762689,
+          "detail": {
+            "quality": 0.9889125465366783,
+            "popularity": 0.41963947575104454,
+            "maintenance": 0.3308453794354282
+          }
+        },
+        "searchScore": 0.007485344
+      },
+      {
+        "package": {
+          "name": "emoji-regex",
+          "scope": "unscoped",
+          "version": "9.2.2",
+          "description": "A regular expression to match all Emoji-only symbols as per the Unicode Standard.",
+          "keywords": [
+            "unicode",
+            "regex",
+            "regexp",
+            "regular expressions",
+            "code points",
+            "symbols",
+            "characters",
+            "emoji"
+          ],
+          "date": "2021-03-02T10:58:09.319Z",
+          "links": {
+            "npm": "https://www.npmjs.com/package/emoji-regex",
+            "homepage": "https://mths.be/emoji-regex",
+            "repository": "https://github.com/mathiasbynens/emoji-regex",
+            "bugs": "https://github.com/mathiasbynens/emoji-regex/issues"
+          },
+          "author": {
+            "name": "Mathias Bynens",
+            "url": "https://mathiasbynens.be/"
+          },
+          "publisher": {
+            "username": "google-wombot",
+            "email": "node-team-npm+wombot@google.com"
+          },
+          "maintainers": [
+            {
+              "username": "mathias",
+              "email": "mathias@qiwi.be"
+            },
+            {
+              "username": "google-wombot",
+              "email": "node-team-npm+wombot@google.com"
+            }
+          ]
+        },
+        "score": {
+          "final": 0.5128221267228161,
+          "detail": {
+            "quality": 0.6207074920639342,
+            "popularity": 0.6020359803178873,
+            "maintenance": 0.33113510283535835
+          }
+        },
+        "searchScore": 0.0072660665
+      }
+    ],
+    "total": 24230,
+    "time": "Sun Sep 05 2021 07:33:27 GMT+0000 (Coordinated Universal Time)"
+  }
