@@ -31,7 +31,7 @@ export const dependenciesSchema = {
             value: {
               $ref: "#/definitions/value",
             },
-            childs: {
+            children: {
               type: "array",
               items: {
                 $ref: "#/definitions/tree",
@@ -46,7 +46,7 @@ export const dependenciesSchema = {
         },
         childs: {
           $ref: "#/definitions/tree",
-        },
+        }
       },
     },
     404: {

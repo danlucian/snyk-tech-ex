@@ -35,6 +35,9 @@ export const computeDependencies: RouteHandlerMethod = async (
     request.log
   );
 
+  reply.header("Access-Control-Allow-Origin", "*");
+  reply.header("Access-Control-Allow-Methods", "GET");
+
   if (head.value) {
     reply.status(200).send(head);
   } else {
@@ -63,17 +66,17 @@ const fetchDependencies = async (
 
       if (depth == 0) {
         for (const [index, [key, value]] of entriesOfEntries(dependencies)) {
-          node.childs[+index] = new TreeNode({
+          node.children[+index] = new TreeNode({
             name: key,
             version: removeSymbolsFrom(value),
           });
         }
       } else if (keysNo(dependencies) !== 0) {
         for (const [index, [key, value]] of entriesOfEntries(dependencies)) {
-          node.childs[+index] = new TreeNode();
+          node.children[+index] = new TreeNode();
 
           await fetchDependencies(
-            node.childs[+index],
+            node.children[+index],
             key,
             removeSymbolsFrom(value),
             depth - 1,
