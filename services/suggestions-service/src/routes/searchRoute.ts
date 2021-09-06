@@ -161,11 +161,9 @@ export const searchSchema = {
   },
 };
 
-export const searchRoute: Array<RouteOptions> = [
-  {
-    method: "GET",
-    url: "/search/suggestions",
-    handler: onSearch,
-    schema: searchSchema,
-  },
-];
+export const searchRoute: RouteOptions = {
+  method: "GET",
+  url: "/search/suggestions",
+  handler: onSearch,
+  schema: searchSchema,
+};
