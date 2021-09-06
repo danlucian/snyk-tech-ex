@@ -18,3 +18,7 @@ Long story short, the scope of the developed solution was to fetch the overall d
 ## Prerequisites
 
 If you plan to run this project on your machine, please refer to the [Prerequisites](PREREQUISITES.md) first.
+
+## Demo
+
+![WebApp demo](docs/demo-webapp.gif)

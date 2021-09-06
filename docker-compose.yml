@@ -35,7 +35,20 @@ services:
     depends_on:
       - elasticsearch  
     ports:
-      - 8085:8085  
+      - 8085:8085
+  packageinfo-service:
+    container_name: packageinfo-service
+    image: packageinfo-service:latest
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch-container:9200
+      - PORT=8086
+    networks:
+      - es-net
+      - services-net
+    depends_on:
+      - elasticsearch  
+    ports:
+      - 8086:8086         
 
 networks:
   es-net:
