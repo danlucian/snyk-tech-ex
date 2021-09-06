@@ -15,6 +15,9 @@ import { NzTreeViewModule } from 'ng-zorro-antd/tree-view';
 import { CommonModule } from '@angular/common';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { BlockUIModule } from 'ng-block-ui';
+import { NzDividerModule } from 'ng-zorro-antd/divider';
+import { NzTypographyModule } from 'ng-zorro-antd/typography';
+import { NzTagModule } from 'ng-zorro-antd/tag';
 
 registerLocaleData(en);
 
@@ -30,6 +33,9 @@ registerLocaleData(en);
     NzButtonModule,
     NzTreeViewModule,
     NzIconModule,
+    NzDividerModule,
+    NzTypographyModule,
+    NzTagModule,
     CommonModule,
     BlockUIModule.forRoot(),
     BrowserAnimationsModule

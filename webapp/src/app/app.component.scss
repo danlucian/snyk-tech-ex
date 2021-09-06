@@ -12,9 +12,27 @@
     margin-top: 12px;
 }
 
-.centered-tree {
-    margin: auto;
-    width: 70%;
-    padding: 10px;
-    margin-top: 12px;
+.suggestion-item {
+    border-style: solid black;
+    margin: 4px;
+}
+
+.package-info {
+    display: flex;
+    justify-content: center;
+}
+
+.package-info-left, .package-info-right {
+    display:inline;
+    min-width: 20%;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+.package-info-details-item {
+    margin: 0;
+}
+
+.tab {
+    margin-left: 40px;
 }

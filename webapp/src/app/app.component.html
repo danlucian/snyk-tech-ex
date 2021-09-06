@@ -8,7 +8,14 @@
       [nzAutocomplete]="auto"
       style="width:100%"
     />
-    <nz-autocomplete [nzDataSource]="options" nzBackfill #auto></nz-autocomplete>
+    <nz-autocomplete #auto>
+      <nz-auto-option *ngFor="let option of options" [nzValue]="option.name">
+        <div class="suggestion-item">
+          <p style="margin: 0;"><strong>{{ option.name }}</strong></p>
+          <p style="margin: 0;">{{ option.description }}</p>
+        </div>
+      </nz-auto-option>
+    </nz-autocomplete>
   </div>
 
   <div class="centered-button">
@@ -20,16 +27,50 @@
     </button>
   </div>
 
-  <div class="centered-tree">
-    <nz-tree-view [nzTreeControl]="treeControl" [nzDataSource]="dataSource">
-      <nz-tree-node *nzTreeNodeDef="let node; when: hasChild" nzTreeNodeIndentLine>
-        <nz-tree-node-toggle>
-          <i nz-icon [nzType]="treeControl.isExpanded(node) ? 'minus-square' : 'plus-square'" nzTheme="outline"></i>
-        </nz-tree-node-toggle>
-        <nz-tree-node-option>
-          {{ node.name }}
-        </nz-tree-node-option>
-      </nz-tree-node>
-    </nz-tree-view>
+  <nz-divider></nz-divider>
+
+  <div *ngIf="showPackageInfo" class="package-info">
+    <div class="package-info-left">
+      <h5 nz-typography>Package details</h5>
+
+      <p class="package-info-details-item"><strong>Name: </strong>{{selectedPackage.name}}</p>
+      <p class="package-info-details-item"><strong>Version: </strong>{{selectedPackage.version}}</p>
+      <p class="package-info-details-item"><strong>Description: </strong>{{selectedPackage.description}}</p>
+
+      <p class="package-info-details-item"><strong>Links: </strong></p>
+      <p class="package-info-details-item tab" *ngFor="let link of selectedPackage.links | keyvalue">
+        <a [href]="link.value" target="_blank">{{link.key}}</a>
+      </p>
+
+      <p class="package-info-details-item"><strong>Authors: </strong></p>
+      <p class="package-info-details-item tab" *ngFor="let author of selectedPackage.author | keyvalue">
+        {{author.value}}
+      </p>
+
+      <p class="package-info-details-item"><strong>Maintainers: </strong></p>
+      <p class="package-info-details-item tab" *ngFor="let maintainer of selectedPackage.maintainers">
+        {{maintainer.username}} <{{maintainer.email}}>
+      </p>
+
+      <br>
+      <span *ngFor="let tag of selectedPackage.keywords">
+        <nz-tag>{{tag}}</nz-tag>
+      </span>
+    </div>
+
+    <div class="package-info-right">
+      <h5 nz-typography>Package depedencies</h5>
+
+      <nz-tree-view [nzTreeControl]="treeControl" [nzDataSource]="dataSource">
+        <nz-tree-node *nzTreeNodeDef="let node; when: hasChild" nzTreeNodeIndentLine>
+          <nz-tree-node-toggle>
+            <i nz-icon [nzType]="treeControl.isExpanded(node) ? 'minus-square' : 'plus-square'" nzTheme="outline"></i>
+          </nz-tree-node-toggle>
+          <nz-tree-node-option>
+            {{ node.name }}
+          </nz-tree-node-option>
+        </nz-tree-node>
+      </nz-tree-view>
+    </div>
   </div>
 </block-ui>
