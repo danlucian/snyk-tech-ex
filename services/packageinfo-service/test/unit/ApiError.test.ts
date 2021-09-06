@@ -1,12 +1,22 @@
 import tap from "tap";
-import { noDependenciesFound } from "../../src/models/api/ApiError";
+import { genericError } from "../../src/models/api/ApiError";
 
-tap.test("No dependencies found error test", async ({ same }) => {
-    const error = noDependenciesFound();
-
+tap.test("Generic error with message", async ({ same }) => {
+    const error = genericError("Test message");
+    
     same(error, {
-        statusCode: 404, 
-        error: "Data error", 
-        message: "No depedencies were found!"
+        statusCode: 500, 
+        error: "Generic error", 
+        message: "Test message"
+    }, "The generic error should return the specified message");
+});
+
+tap.test("Generic error with default", async ({ same }) => {
+    const error = genericError();
+    
+    same(error, {
+        statusCode: 500, 
+        error: "Generic error", 
+        message: "An unknown error occured"
     }, "The generic error should return the specified message");
 });

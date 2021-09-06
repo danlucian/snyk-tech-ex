@@ -4,8 +4,6 @@ export default interface ApiError {
   message: string;
 }
 
-export const noDependenciesFound = (
-  message: string = "No depedencies were found!"
-) => {
-  return { statusCode: 404, error: "Data error", message: message };
+export const genericError = (message: string = "An unknown error occured") => {
+  return { statusCode: 500, error: "Generic error", message: message };
 };

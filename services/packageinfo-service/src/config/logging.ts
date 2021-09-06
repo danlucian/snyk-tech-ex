@@ -3,7 +3,7 @@ import PinoMultiStream from "pino-multi-stream";
 import { esHost } from "./environment";
 
 const toElastic = require("pino-elasticsearch")({
-  index: "suggestions-service-index",
+  index: "packageinfo-service-index",
   consistency: "one",
   node: esHost,
   "es-version": 7,

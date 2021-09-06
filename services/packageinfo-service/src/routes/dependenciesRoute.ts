@@ -2,13 +2,20 @@ import { RouteOptions } from "fastify";
 import { computeDependencies } from "../handlers/dependenciesHandler";
 
 export const dependenciesSchema = {
-  params: {
+  querystring: {
     type: "object",
     properties: {
       depth: {
-        type: "string",
+        type: "number",
+        minimum: 0,
       },
+      pckg: { 
+        type: "string", 
+        minLength: 1, 
+        maxLength: 214
+      }
     },
+    required: [ "pckg" ]
   },
   response: {
     200: {
@@ -44,12 +51,12 @@ export const dependenciesSchema = {
         value: {
           $ref: "#/definitions/value",
         },
-        childs: {
+        children: {
           $ref: "#/definitions/tree",
-        }
+        },
       },
     },
-    404: {
+    500: {
       type: "object",
       properties: {
         statusCode: {
@@ -65,10 +72,9 @@ export const dependenciesSchema = {
     },
   },
 };
-export const dependenciesRoute: Array<RouteOptions> = [
-  {
+export const dependenciesRoute: RouteOptions = {
     method: "GET",
-    url: "/dependencies/:pckg",
+    url: "/dependencies",
     handler: computeDependencies,
-  },
-];
+    schema: dependenciesSchema
+};

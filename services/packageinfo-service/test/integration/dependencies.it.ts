@@ -50,10 +50,11 @@ describe("Dependencies fetch happy flows", async () => {
         await loadMocks();
     
         const response = await supertest(server.server)
-            .get("/dependencies/fastify")
+            .get("/dependencies")
+            .query({ pckg: "fastify" })
             .expect(200)
             .expect('Content-Type', 'application/json; charset=utf-8');
-        equal((response.body as TreeNode).childs.length > 0, true, "the response must contain an array of childs packages");    
+        equal((response.body as TreeNode).children.length > 0, true, "the response must contain an array of children packages");    
 
         const schemaValidation = new jsonschema
             .Validator()
@@ -66,13 +67,13 @@ describe("Dependencies fetch happy flows", async () => {
         await loadMocks();
     
         const response = await supertest(server.server)
-            .get("/dependencies/fastify")
-            .query({ depth: 0 })
+            .get("/dependencies")
+            .query({ pckg: "fastify", depth: 0 })
             .expect(200)
             .expect('Content-Type', 'application/json; charset=utf-8');
-        (response.body as TreeNode).childs
+        (response.body as TreeNode).children
             .forEach((node) => {
-                equal(node.childs.length === 0, true, "Because of depth 0, childs should not childs")
+                equal(node.children.length === 0, true, "Because of depth 0, children should not have children")
             })
         
         const schemaValidation = new jsonschema
@@ -88,13 +89,14 @@ describe("Dependencies fetch error flows", async () => {
         await loadMocks();
 
         const response = await supertest(server.server)
-            .get("/dependencies/foo-bar")
-            .expect(404)
+            .get("/dependencies")
+            .query({ pckg: "foo-bar" })
+            .expect(500)
             .expect('Content-Type', 'application/json; charset=utf-8');
 
         const schemaValidation = new jsonschema
             .Validator()
-            .validate(response.body, dependenciesSchema.response[404]);
+            .validate(response.body, dependenciesSchema.response[500]);
         equal(schemaValidation.valid, true, "the response must respect the defined schema");
     });
 
@@ -103,14 +105,14 @@ describe("Dependencies fetch error flows", async () => {
         await loadMocks();
 
         const response = await supertest(server.server)
-            .get("/dependencies/foo-bar")
-            .query({ depth: 0 })
-            .expect(404)
+            .get("/dependencies")
+            .query({ pckg: "foo-bar", depth: 0 })
+            .expect(500)
             .expect('Content-Type', 'application/json; charset=utf-8');
 
         const schemaValidation = new jsonschema
             .Validator()
-            .validate(response.body, dependenciesSchema.response[404]);
+            .validate(response.body, dependenciesSchema.response[500]);
         equal(schemaValidation.valid, true, "the response must respect the defined schema");
     });
 });

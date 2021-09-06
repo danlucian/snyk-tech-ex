@@ -1,4 +1,5 @@
 import Fastify, { FastifyInstance } from "fastify";
+import corsPlugin from "fastify-cors";
 import { loggingStreams, loggingSerializers } from "./config/logging";
 import { loggingLevel } from "./config/environment";
 import { dependenciesRoute } from "./routes/dependenciesRoute";
@@ -11,6 +12,7 @@ const server: FastifyInstance = Fastify({
   },
 });
 
-dependenciesRoute.forEach((route) => server.route(route));
+server.register(corsPlugin);
+server.route(dependenciesRoute);
 
 export default server;

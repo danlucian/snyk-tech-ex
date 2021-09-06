@@ -16,6 +16,7 @@ tap.test("Test the computation of no of keys for an object", async ({ equal }) =
     equal(keysNo({ a: "a", b: "b" }) === 2,          true,    "the number of keys of the object must be correct");
     equal(keysNo({ a: "a" }) === 1,                  true,    "the number of keys of the object must be correct");
     equal(keysNo({ }) === 0,                         true,    "the number of keys of the object must be correct");
+    equal(keysNo(undefined) === 0,                   true,    "the number of keys of the object must be correct");
 });
 
 tap.test("Test the computation of index, key & values for an object", async ({ same }) => {
