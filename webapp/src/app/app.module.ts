@@ -18,6 +18,8 @@ import { BlockUIModule } from 'ng-block-ui';
 import { NzDividerModule } from 'ng-zorro-antd/divider';
 import { NzTypographyModule } from 'ng-zorro-antd/typography';
 import { NzTagModule } from 'ng-zorro-antd/tag';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
 
 registerLocaleData(en);
 
@@ -36,6 +38,8 @@ registerLocaleData(en);
     NzDividerModule,
     NzTypographyModule,
     NzTagModule,
+    NzInputModule,
+    NzCheckboxModule,
     CommonModule,
     BlockUIModule.forRoot(),
     BrowserAnimationsModule

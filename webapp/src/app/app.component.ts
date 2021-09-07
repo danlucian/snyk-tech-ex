@@ -29,7 +29,7 @@ interface Package {
 
 class TreeViewNode {
   value: Package;
-  children?: TreeViewNode[];
+  children: TreeViewNode[];
 
   constructor(value: Package, children: TreeViewNode[]) {
     this.value = value;
@@ -52,6 +52,9 @@ export class AppComponent {
   @BlockUI() blockUI: NgBlockUI;
 
   inputValue?: string;
+  depthLevel: number = 0;
+  isFullDepth: boolean = false;
+  
   selectedPackage: Suggestion;
   options: Array<Suggestion> = [];
   treeData: TreeViewNode[] = [];
@@ -78,11 +81,11 @@ export class AppComponent {
 
   constructor(private httpClient: HttpClient) {}
 
-  getNode(name: string): FlatNode | null {
+  getNode = (name: string) => {
     return this.treeControl.dataNodes.find(n => n.name === name) || null;
   }
 
-  onInput(event: Event): void {
+  onInput = (event: Event) => {
     const value = (event.target as HTMLInputElement).value;
 
     this.httpClient
@@ -98,25 +101,45 @@ export class AppComponent {
     )
   }
 
-  onSubmit(): void {
+  onSubmit = () => {
     this.blockUI.start('Loading dependencies...');
-    this.httpClient
+
+    if (this.isFullDepth) {
+      this.httpClient
       .get(`http://localhost:8086/dependencies?pckg=${this.inputValue}`)
       .subscribe(
         success => {
-          const nodes = new TreeViewNode((<any>success).value, (<any>success).children);
-          this.dataSource.setData([nodes]);
-          this.selectedPackage = this.options.filter(element => element.name === this.inputValue)[0];
-          this.blockUI.stop();
-
-          this.showPackageInfo = true;
-          this.treeControl.expandAll();
+          this.handleDependenciesResponse(new TreeViewNode((<any>success).value, (<any>success).children));
         }, 
         error => {
           this.blockUI.stop();
           console.error(error);
         }
       )
+    } else {
+      this.httpClient
+      .get(`http://localhost:8086/dependencies?pckg=${this.inputValue}&depth=${this.depthLevel}`)
+      .subscribe(
+        success => {
+          this.handleDependenciesResponse(new TreeViewNode((<any>success).value, (<any>success).children));
+        }, 
+        error => {
+          this.blockUI.stop();
+          console.error(error);
+        }
+      )
+    }
+  }
+
+  handleDependenciesResponse = (head: TreeViewNode) => {
+    this.treeData = [head];
+    this.dataSource.setData(this.treeData);
+
+    this.selectedPackage = this.options.filter(element => element.name === this.inputValue)[0];
+    this.blockUI.stop();
+
+    this.showPackageInfo = true;
+    this.treeControl.expandAll();
   }
 }
 

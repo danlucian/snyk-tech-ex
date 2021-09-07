@@ -1,14 +1,14 @@
 <block-ui>
   <div class="centered-input">
     <input
-      placeholder="please type a package name here..."
-      nz-input
-      [(ngModel)]="inputValue"
-      (input)="onInput($event)"
-      [nzAutocomplete]="auto"
-      style="width:100%"
+    placeholder="please type a package name here..."
+    nz-input
+    [(ngModel)]="inputValue"
+    (input)="onInput($event)"
+    [nzAutocomplete]="auto"
+    style="width:100%"
     />
-    <nz-autocomplete #auto>
+    <nz-autocomplete #auto >
       <nz-auto-option *ngFor="let option of options" [nzValue]="option.name">
         <div class="suggestion-item">
           <p style="margin: 0;"><strong>{{ option.name }}</strong></p>
@@ -16,6 +16,19 @@
         </div>
       </nz-auto-option>
     </nz-autocomplete>
+
+    <div style="margin: 12px 0;">
+      <span style="margin-right: 6px;">Depth level:</span>
+      <input 
+        nz-input 
+        placeholder="Enter the depth level here, e.g. 1" 
+        [(ngModel)]="depthLevel" 
+        type="number" 
+        style="margin-right: 6px; width:10%"
+        [disabled]="isFullDepth"
+      />
+      <label nz-checkbox [(ngModel)]="isFullDepth">full depth</label>
+    </div>
   </div>
 
   <div class="centered-button">
