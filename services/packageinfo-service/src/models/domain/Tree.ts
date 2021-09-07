@@ -2,9 +2,9 @@ import Package from "./Package";
 
 export default class TreeNode {
   children: Array<TreeNode>;
-  value?: Package;
+  value: Package;
 
-  constructor(value?: Package, children: Array<TreeNode> = []) {
+  constructor(value: Package, children: Array<TreeNode> = []) {
     this.value = value;
     this.children = children;
   }

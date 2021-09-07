@@ -31,7 +31,7 @@ export const computeDependencies: RouteHandlerMethod = async (
     request.log
   );
 
-  if (head.value?.version != LATEST) {
+  if (head.value.version != LATEST) {
     reply.status(200).send(head);
   } else {
     reply.status(500).send(genericError("Unable to fetch the dependencies!"));
@@ -51,12 +51,8 @@ const fetchDependencies = async (
 
   if (depth >= 0) {
     try {
-      const { version , dependencies } = (await cachedOrRemote(
-        pckg,
-        vers
-      )) as RegistryResponse;
-
-      if (node.value?.version == LATEST) {
+      const { version , dependencies } = await cachedOrRemotePackageInfo(pckg, vers);
+      if (node.value.version == LATEST) {
         node.value.version = version;
       }
 
@@ -64,7 +60,7 @@ const fetchDependencies = async (
         for (const [index, [key, value]] of entriesOfEntries(dependencies)) {
           node.children[+index] = new TreeNode({
             name: key,
-            version: removeSymbolsFrom(value),
+            version: removeSymbolsFrom(value)
           });
         }
       } else if (keysNo(dependencies) !== 0) {
@@ -90,11 +86,11 @@ const fetchDependencies = async (
   return node;
 };
 
-const cachedOrRemote = async (pckg: string, vers: string) => {
+const cachedOrRemotePackageInfo = async (pckg: string, vers: string) => {
   if (vers === LATEST) {
     const response = await registryClient.get(`/${pckg}/${vers}`);
     cache.set(computeKey(pckg, vers), JSON.stringify(response.data));
-    return response.data;
+    return response.data as RegistryResponse;
   }
 
   const cached = cache.get(computeKey(pckg, vers));
@@ -103,6 +99,6 @@ const cachedOrRemote = async (pckg: string, vers: string) => {
   } else {
     const response = await registryClient.get(`/${pckg}/${vers}`);
     cache.set(computeKey(pckg, vers), JSON.stringify(response.data));
-    return response.data;
+    return response.data as RegistryResponse;
   }
 };
